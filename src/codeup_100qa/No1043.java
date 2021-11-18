@@ -4,15 +4,15 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class No1073 {
+public class No1043 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader scan=new BufferedReader(new InputStreamReader(System.in));
 		String inputText[]=scan.readLine().split(" ");
-		for(String element : inputText) {
-			if(Integer.parseInt(element)==0) {
-				break;
-			}
-			System.out.println(element);
-		}
+		
+		int inputNum[]=new int[inputText.length];
+		for(int i=0; i<inputText.length; i++)
+			inputNum[i]=Integer.parseInt(inputText[i]);
+		
+		System.out.println(inputNum[0]%inputNum[1]);
 	}
 }

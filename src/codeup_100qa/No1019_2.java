@@ -1,10 +1,11 @@
 package codeup_100qa;
 import java.util.Scanner;
 
-public class No1019 {
+public class No1019_2 {
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
 		String inputText=scan.next();
+		
 		scan.close();
 		String inputArr[]=inputText.split("\\.");
 		

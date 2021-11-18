@@ -1,12 +1,13 @@
 package codeup_100qa;
 
+import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.IOException;
 
-public class No1092 {
+public class No1036 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader scan=new BufferedReader(new InputStreamReader(System.in));
-		String inputText[]=scan.readLine().split(" ");
+		char inputChar=scan.readLine().charAt(0);
+		System.out.printf("%d",(int)inputChar);
 	}
 }
