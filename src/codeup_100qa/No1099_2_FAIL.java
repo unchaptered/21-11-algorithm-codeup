@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class No1100 {
+public class No1099_2_FAIL {
 	public static void main(String[] args) throws IOException {
 		BufferedReader scan=new BufferedReader(new InputStreamReader(System.in));
 		
@@ -24,7 +24,7 @@ public class No1100 {
 			int target=mazeGround[posiX][posiY+1];
 			
 			if(target==1 || target==2) {
-				posiX++;
+				posiX=(!(posiX>9)) ? posiX+1 : posiX;
 				if(mazeGround[posiX][posiY]==2) {
 					mazeGround[posiX][posiY]=9;
 					break;
@@ -32,7 +32,7 @@ public class No1100 {
 					mazeGround[posiX][posiY]=9;
 				}
 			} else {
-				posiY++;
+				posiY=(!(posiY>9)) ? posiY+1 : posiY;
 				if(mazeGround[posiX][posiY]==2) {
 					mazeGround[posiX][posiY]=9;
 					break;
